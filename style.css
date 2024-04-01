@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px 50px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+
+  font-family: "Roboto Slab", serif;
+
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.0%, rgba(221 143 168 / 42%) 100%);
+
+  min-height: 100vh;
+}
+
+.page {
+  width: 100%;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+#logoNome {
+  height: 15.0rem;
+}
+
+#logo {
+  width: 32.0rem;
+}
+
+#zap {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 3.0rem;
+}
+
+ul {
+  display: flex;
+  gap: 5.0rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li a:hover {
+  font-weight: bold;
+  color: rgb(231, 125, 111);
+  opacity: 0.7;
+
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.5;
+  font-size: 1.5rem;
+}
+
+h1,
+ul {
+  font-family: "Roboto Slab", serif;
+
+}
+
+h1 {
+  font-size: 4.0rem;
+  line-height: 4.5rem;
+  /* color: #000; */
+  font-weight: normal;
+  width: auto;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 span {
+  color: rgb(240, 154, 143);
+  font-weight: bold;
+}
+
+section p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: rgb(36, 34, 34);
+  /* width: 900px; */
+  margin: 3.0rem 4.0rem 4.0rem 0;
+}
+
+button {
+  /* text-transform: uppercase; */
+  color: #349502ed;
+  font-family: "Roboto Slab", serif;
+
+  background: #bde7af;
+  /* border-color: #349502ed; */
+  border: 0;
+  border-radius: 7px;
+  padding: 1.4rem 3.2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.0rem
+    /* justify-content: center; */
+
+}
+
+button:hover {
+  opacity: 0.7;
+
+}
+
+button img {
+  aspect-ratio: 1/1;
+  /* object-fit: contain; */
+  height: 3.0rem;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 3.0rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+footer a {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+
+  text-decoration: none;
+  color: rgb(231, 125, 111);
+
+}
+
+footer a:hover {
+  font-weight: bold;
+  color: rgb(231, 125, 111);
+  opacity: 0.7;
+}
+
+#livros {
+  width: 600px;
+}
+
+
+@media (max-width: 700px) {
+
+  body {
+    padding: 1.6rem;
+
+  }
+
+  ul {
+    display: inline;
+    margin-left: 1.8rem;
+  }
+
+  main {
+    display: flex;
+    gap: 10rem;
+    flex-wrap: wrap-reverse;
+    margin: 0;
+  }
+
+  .content-livro {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+
+  #livros {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+
+  ul li {
+    gap: 5.3rem;
+    max-width: 450px;
+    align-items: center;
+  }
+}
